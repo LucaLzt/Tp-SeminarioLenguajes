@@ -5,95 +5,10 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondoinicio"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:layout_gravity="center"
-    android:gravity="center"
     >
 
-        <TextView
-            android:id="@+id/txtUsuario"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Usuario"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="5dp"
-            />
 
-        <EditText
-            android:id="@+id/txtViewUsuario"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:hint="Escriba su usuario"
-            android:textSize="20sp"
-            android:layout_marginLeft="55dp"
-            android:layout_marginRight="55dp"
-            android:layout_marginTop="5dp"
-            />
-
-        <TextView
-            android:id="@+id/txtPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Contraseña"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:layout_marginTop="5dp"
-            />
-
-        <EditText
-            android:id="@+id/txtViewPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:hint="Escriba su contraseña"
-            android:textSize="20sp"
-            android:layout_marginLeft="55dp"
-            android:layout_marginRight="55dp"
-            android:layout_marginTop="5dp"
-            />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="30dp"
-            android:gravity="center"
-            >
-
-                <Button
-                    android:id="@+id/btnInicioSesion"
-                    android:layout_width="170dp"
-                    android:layout_height="60dp"
-                    android:text="Iniciar Sesión"
-                    android:textSize="15sp"
-                    android:layout_marginRight="7dp"
-                        />
-
-                <Button
-                    android:id="@+id/btnRegistrar"
-                    android:layout_width="170dp"
-                    android:layout_height="60dp"
-                    android:text="Registrar Usuario"
-                    android:textSize="15sp"
-                    android:layout_marginLeft="7dp"
-                        />
-
-        </LinearLayout>
-
-        <CheckBox
-            android:id="@+id/btnRecordarUsuario"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Recordar Usuario"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            />
 
 </LinearLayout>

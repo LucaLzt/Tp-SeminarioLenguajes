@@ -11,93 +11,103 @@
     >
 
         <ImageButton
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            android:id="@+id/btnAtras"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_gravity="start"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:scaleType="centerInside"
             android:src="@drawable/flecha_atras"
-            android:layout_marginTop="4dp"
-            android:layout_marginLeft="4dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="3dp"
             />
 
-       <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Usuario"
-            android:gravity="center"
-            android:layout_gravity="center"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="1dp"
-           android:layout_marginTop="140dp"
-            />
-
-        <EditText
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:hint="Ingrese su usuario"
-            android:textSize="20sp"
-            android:layout_marginLeft="55dp"
-            android:layout_marginRight="55dp"
-            android:layout_marginTop="5dp"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Contraseña"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
             android:gravity="center"
-            android:layout_gravity="center"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="1dp"
-            android:layout_marginTop="15dp"
-            />
+            android:layout_marginTop="-50dp"
+            >
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:hint="Ingrese su contraseña"
-            android:textSize="20sp"
-            android:layout_marginLeft="55dp"
-            android:layout_marginRight="55dp"
-            android:layout_marginTop="5dp"
-            />
+           <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usuario"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="1dp"
+                />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="1dp"
-            android:layout_marginTop="15dp"
-            android:gravity="center"
-            android:layout_gravity="center"
-            android:text="Confirmar contraseña"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Ingrese su usuario"
+                android:textSize="20sp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
+                android:layout_marginTop="5dp"
+                />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:hint="Ingrese su contraseña"
-            android:textSize="20sp"
-            android:layout_marginLeft="55dp"
-            android:layout_marginRight="55dp"
-            android:layout_marginTop="5dp"
-            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contraseña"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="15dp"
+                />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:text="Confirmar"
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center"
-            />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Ingrese su contraseña"
+                android:textSize="20sp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Confirmar contraseña"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Ingrese su contraseña"
+                android:textSize="20sp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Confirmar Registro"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
 
 </LinearLayout>
