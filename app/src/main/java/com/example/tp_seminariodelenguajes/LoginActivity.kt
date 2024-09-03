@@ -14,9 +14,7 @@ import androidx.core.view.WindowInsetsCompat
 
 class LoginActivity : AppCompatActivity() {
 
-    lateinit var tvUsuario: TextView
     lateinit var etUsuario: EditText
-    lateinit var tvPassword: TextView
     lateinit var etPassword: EditText
     lateinit var btnInicioSesion: Button
     lateinit var btnRegistrar: Button
@@ -32,9 +30,7 @@ class LoginActivity : AppCompatActivity() {
             insets
         }
 
-        tvUsuario = findViewById(R.id.tvUsuario)
         etUsuario = findViewById(R.id.etUsuario)
-        tvPassword = findViewById(R.id.tvPassword)
         etPassword = findViewById(R.id.etPassword)
         btnInicioSesion = findViewById(R.id.btnInicioSesion)
         btnRegistrar = findViewById(R.id.btnRegistrar)
@@ -58,6 +54,8 @@ class LoginActivity : AppCompatActivity() {
             }
 
         }
+
+
 
     }
 
