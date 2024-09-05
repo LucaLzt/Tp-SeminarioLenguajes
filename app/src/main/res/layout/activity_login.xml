@@ -5,83 +5,90 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondoinicio"
+    android:background="#82B1FF"
     tools:context=".LoginActivity"
     android:orientation="vertical"
     android:layout_gravity="center"
     android:gravity="center"
     >
 
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icono_usuario_opcion2"
+            />
+
         <TextView
-            android:id="@+id/tvUsuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="Iniciar Sesión"
             android:gravity="center"
-            android:text="Usuario"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="5dp"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
             />
 
         <EditText
             android:id="@+id/etUsuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text"
-            android:hint="Ingrese su usuario"
+            android:layout_marginTop="16dp"
+            android:hint="Usuario"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
             android:textSize="20sp"
-            android:layout_marginLeft="55dp"
-            android:layout_marginRight="55dp"
-            android:layout_marginTop="5dp"
-            />
-
-        <TextView
-            android:id="@+id/tvPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Contraseña"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="18dp"
+            android:inputType="text"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
             />
 
         <EditText
-            android:id="@+id/etPassword"
+            android:id="@+id/etContraseña"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:hint="Ingrese su contraseña"
+            android:layout_marginTop="16dp"
+            android:hint="Contraseña"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
             android:textSize="20sp"
-            android:layout_marginLeft="55dp"
-            android:layout_marginRight="55dp"
-            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="18dp"
+            android:inputType="textPassword"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
             />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="30dp"
+            android:orientation="vertical"
             android:gravity="center"
             >
 
             <Button
-                android:id="@+id/btnInicioSesion"
-                android:layout_width="170dp"
-                android:layout_height="50dp"
-                android:text="Iniciar Sesión"
-                android:textSize="15sp"
-                android:layout_marginRight="7dp"
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:backgroundTint="@color/white"
+                android:textColor="#3B84F1"
+                android:padding="18dp"
+                android:layout_marginTop="25dp"
+                android:textSize="20sp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
                 />
 
             <Button
                 android:id="@+id/btnRegistrar"
-                android:layout_width="170dp"
-                android:layout_height="50dp"
-                android:text="Registrar Usuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrar usuario"
+                android:backgroundTint="@color/invisible"
+                android:textColor="#3B84F1"
                 android:textSize="15sp"
-                android:layout_marginLeft="7dp"
                 />
 
         </LinearLayout>
@@ -93,7 +100,7 @@
             android:text="Recordar Usuario"
             android:textSize="15sp"
             android:textStyle="bold"
-            android:layout_marginTop="10dp"
+            android:buttonTint="#3B84F1"
             />
 
 

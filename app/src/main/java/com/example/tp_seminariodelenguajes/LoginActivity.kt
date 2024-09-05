@@ -15,8 +15,8 @@ import androidx.core.view.WindowInsetsCompat
 class LoginActivity : AppCompatActivity() {
 
     lateinit var etUsuario: EditText
-    lateinit var etPassword: EditText
-    lateinit var btnInicioSesion: Button
+    lateinit var etContraseña: EditText
+    lateinit var btnLogin: Button
     lateinit var btnRegistrar: Button
     lateinit var btnRecordarUsuario: CheckBox
 
@@ -31,8 +31,8 @@ class LoginActivity : AppCompatActivity() {
         }
 
         etUsuario = findViewById(R.id.etUsuario)
-        etPassword = findViewById(R.id.etPassword)
-        btnInicioSesion = findViewById(R.id.btnInicioSesion)
+        etContraseña = findViewById(R.id.etContraseña)
+        btnLogin = findViewById(R.id.btnLogin)
         btnRegistrar = findViewById(R.id.btnRegistrar)
         btnRecordarUsuario = findViewById(R.id.btnRecordarUsuario)
 
@@ -43,9 +43,9 @@ class LoginActivity : AppCompatActivity() {
 
         }
 
-        btnInicioSesion.setOnClickListener {
+        btnLogin.setOnClickListener {
 
-            if(etUsuario.text.toString().isEmpty() || etPassword.text.toString().isEmpty()) {
+            if(etUsuario.text.toString().isEmpty() || etContraseña.text.toString().isEmpty()) {
                 Toast.makeText(this, "Complete todos los campos", Toast.LENGTH_SHORT).show()
             } else {
                 val intent = Intent(this, MainActivity::class.java)
