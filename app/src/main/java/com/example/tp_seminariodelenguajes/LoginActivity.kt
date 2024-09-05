@@ -37,10 +37,8 @@ class LoginActivity : AppCompatActivity() {
         btnRecordarUsuario = findViewById(R.id.btnRecordarUsuario)
 
         btnRegistrar.setOnClickListener {
-
             val intent = Intent(this, RegistrarUsuario::class.java)
             startActivity(intent)
-
         }
 
         btnLogin.setOnClickListener {

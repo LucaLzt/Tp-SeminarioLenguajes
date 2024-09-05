@@ -3,4 +3,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="invisible">#00FFFFFF</color>
+    <color name="toolbar">#4B90FF</color>
+    <color name="app_background">#82B1FF</color>
 </resources>
