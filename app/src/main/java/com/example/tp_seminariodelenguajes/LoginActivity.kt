@@ -42,7 +42,6 @@ class LoginActivity : AppCompatActivity() {
         }
 
         btnLogin.setOnClickListener {
-
             if(etUsuario.text.toString().isEmpty() || etContraseña.text.toString().isEmpty()) {
                 Toast.makeText(this, "Complete todos los campos", Toast.LENGTH_SHORT).show()
             } else {
@@ -50,10 +49,7 @@ class LoginActivity : AppCompatActivity() {
                 startActivity(intent)
                 finish()
             }
-
         }
-
-
 
     }
 
