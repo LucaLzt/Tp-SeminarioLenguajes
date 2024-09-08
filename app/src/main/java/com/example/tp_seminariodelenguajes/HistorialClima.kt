@@ -1,6 +1,7 @@
 package com.example.tp_seminariodelenguajes
 
 import android.os.Bundle
+import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
@@ -14,6 +15,7 @@ class HistorialClima : AppCompatActivity() {
     lateinit var toolbar: Toolbar
     private lateinit var weatherRecyclerView: RecyclerView
     private lateinit var weatherAdapter: WeatherAdapter
+    lateinit var btnAtras: ImageButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,6 +26,8 @@ class HistorialClima : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        btnAtras = findViewById(R.id.btnAtras)
 
         // Datos de prueba
         val weatherData = listOf(
@@ -66,6 +70,10 @@ class HistorialClima : AppCompatActivity() {
         toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
         supportActionBar!!.title = resources.getString(R.string.titulo)
+
+        btnAtras.setOnClickListener {
+            finish()
+        }
 
     }
 }
