@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CustomToolbarMenu" parent="ThemeOverlay.AppCompat.Light">
+        <!-- Color de fondo del menú desplegable -->
+        <item name="android:colorBackground">@color/blackDay</item>
+        <!-- Color del texto en el menú -->
+        <item name="android:textColorPrimary">@color/whiteDay</item>
+    </style>
+</resources>

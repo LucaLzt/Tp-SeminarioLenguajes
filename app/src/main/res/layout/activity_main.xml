@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:background="@color/app_background"
+    android:background="?attr/background"
     >
 
     <include
@@ -19,6 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Ahora"
+        android:textColor="?attr/android:textColor"
         android:textSize="20sp"
         android:layout_marginBottom="10dp"
         android:layout_marginLeft="15dp"
@@ -53,6 +54,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Soleado"
+                android:textColor="?attr/android:textColor"
                 android:textSize="50sp"
                 />
 
@@ -61,6 +63,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="20°C"
+                android:textColor="?attr/android:textColor"
                 android:textSize="50sp"
                 />
 
@@ -73,6 +76,7 @@
         android:layout_height="wrap_content"
         android:text="Próximas Horas"
         android:textSize="20sp"
+        android:textColor="?attr/android:textColor"
         android:layout_marginTop="40dp"
         android:layout_marginBottom="10dp"
         android:layout_marginLeft="15dp"/>
@@ -96,8 +100,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Historial"
-        android:backgroundTint="@color/white"
-        android:textColor="#3B84F1"
+        android:backgroundTint="?attr/colorPrimary"
+        android:textColor="?attr/android:textColor"
         android:padding="18dp"
         android:textSize="20sp"
         android:layout_marginRight="20dp"

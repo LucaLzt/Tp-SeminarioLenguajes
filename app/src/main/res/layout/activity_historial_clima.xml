@@ -7,7 +7,8 @@
     android:layout_height="match_parent"
     tools:context=".HistorialClima"
     android:orientation="vertical"
-    android:background="@color/app_background">
+    android:background="?attr/background"
+    >
 
     <include
         android:id="@+id/toolbar"
@@ -28,7 +29,8 @@
             android:layout_gravity="start"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="centerInside"
-            android:src="@drawable/flecha_atras"
+            android:src="@drawable/ic_back"
+            android:contentDescription="Boton para retroceder"
             />
 
         <TextView
@@ -39,6 +41,7 @@
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
+            android:textColor="?attr/android:textColor"
             />
 
     </LinearLayout>

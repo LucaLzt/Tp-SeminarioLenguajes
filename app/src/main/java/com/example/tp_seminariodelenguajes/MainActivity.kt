@@ -7,6 +7,7 @@ import android.view.MenuItem
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -15,8 +16,8 @@ import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var toolbar: Toolbar
-    lateinit var btnHistorial: Button
+    private lateinit var toolbar: Toolbar
+    private lateinit var btnHistorial: Button
     private lateinit var weatherRecyclerView: RecyclerView
     private lateinit var weatherAdapter: WeatherAdapter
 
@@ -68,6 +69,7 @@ class MainActivity : AppCompatActivity() {
         weatherRecyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         weatherRecyclerView.adapter = weatherAdapter
 
+        // Toolbar
         toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
         supportActionBar!!.title = resources.getString(R.string.titulo)
@@ -88,10 +90,11 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if(item.itemId == R.id.itemModoDia) {
-            //  Lógica Modo Día
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         } else if (item.itemId == R.id.itemModoNoche) {
-            //  Lógica Modo Noche
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
         }
+        recreate()
         return super.onOptionsItemSelected(item)
     }
 

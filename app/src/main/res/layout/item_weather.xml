@@ -25,7 +25,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hour"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:textColor="@color/whiteDay"
+            />
 
         <!-- Fecha -->
         <TextView
@@ -33,7 +35,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Date"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:textColor="@color/whiteDay"
+            />
 
         <!-- Temperatura -->
         <TextView
@@ -41,7 +45,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Temperature"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:textColor="@color/whiteDay"
+            />
 
         <!-- Condición climática -->
         <TextView
@@ -49,6 +55,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Weather condition"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:textColor="@color/whiteDay"
+            />
     </LinearLayout>
 </LinearLayout>

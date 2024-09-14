@@ -5,24 +5,45 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#82B1FF"
-    tools:context=".MainActivity"
+    android:background="?attr/background"
+    tools:context=".RegistrarUsuario"
     android:orientation="vertical"
     >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/btnAtras"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_gravity="start"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
+            android:contentDescription="Botón para retroceder"
             android:scaleType="centerInside"
-            android:src="@drawable/flecha_atras"
+            android:src="@drawable/ic_back"
             android:layout_marginTop="3dp"
-            android:layout_marginLeft="3dp"
+            android:layout_marginStart="3dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             />
+
+        <ImageButton
+            android:id="@+id/btnModo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Botón para modo"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_mode"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -34,10 +55,10 @@
 
 
             <ImageView
-                android:layout_width="160dp"
-                android:layout_height="160dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
                 android:layout_gravity="center"
-                android:src="@drawable/icono_usuario_opcion2"
+                android:src="@drawable/ic_account"
                 />
 
             <TextView
@@ -45,6 +66,7 @@
                 android:layout_height="wrap_content"
                 android:text="Registrar Usuario"
                 android:gravity="center"
+                android:textColor="?attr/android:textColor"
                 android:textSize="20sp"
                 android:layout_marginBottom="20dp"
                 />
@@ -55,8 +77,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:hint="Usuario"
-                android:textColor="@color/black"
-                android:textColorHint="@color/black"
+                android:textColor="?attr/android:textColor"
+                android:textColorHint="?attr/android:textColorHint"
                 android:textSize="20sp"
                 android:background="@drawable/rounded_corner"
                 android:padding="18dp"
@@ -71,8 +93,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:hint="Contraseña"
-                android:textColor="@color/black"
-                android:textColorHint="@color/black"
+                android:textColor="?attr/android:textColor"
+                android:textColorHint="?attr/android:textColorHint"
                 android:textSize="20sp"
                 android:background="@drawable/rounded_corner"
                 android:padding="18dp"
@@ -87,8 +109,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:hint="Confirmar Contraseña"
-                android:textColor="@color/black"
-                android:textColorHint="@color/black"
+                android:textColor="?attr/android:textColor"
+                android:textColorHint="?attr/android:textColorHint"
                 android:textSize="20sp"
                 android:background="@drawable/rounded_corner"
                 android:padding="18dp"
@@ -102,13 +124,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Confirmar"
-                android:backgroundTint="@color/white"
-                android:textColor="#3B84F1"
-                android:padding="18dp"
+                android:backgroundTint="?attr/colorPrimary"
+                android:textColor="?attr/android:textColor"
+                android:padding="15dp"
                 android:layout_marginTop="25dp"
                 android:textSize="20sp"
-                android:layout_marginRight="20dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
                 />
 
         </LinearLayout>

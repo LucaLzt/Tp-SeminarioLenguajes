@@ -1,7 +1,5 @@
 package com.example.tp_seminariodelenguajes
 
-import java.io.Serializable
-
 data class WeatherForecast(
     val hour: String,
     val date: String,
