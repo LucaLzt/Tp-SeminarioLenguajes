@@ -1,5 +1,6 @@
 package com.example.tp_seminariodelenguajes
 
+import android.content.Context
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -10,6 +11,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 class RegistrarUsuario : AppCompatActivity() {
 
@@ -53,6 +57,7 @@ class RegistrarUsuario : AppCompatActivity() {
             } else if(etContrasena.text.toString() != etConfirmarContrasena.text.toString()) {
                 Toast.makeText(this, "Las contraseñas deben coincidir", Toast.LENGTH_SHORT).show()
             } else {
+                registerUser(this, etUsuario.text.toString(), etContrasena.text.toString())
                 Toast.makeText(this, "Registro Completo!", Toast.LENGTH_SHORT).show()
                 finish()
             }
@@ -67,5 +72,15 @@ class RegistrarUsuario : AppCompatActivity() {
             recreate()
         }
 
+    }
+}
+
+// Función para guardar usuario en la bd ("Registrar Usuario")
+fun registerUser(context: Context, username: String, password: String) {
+    val user = User(username = username, password = password)
+    val db = AppDatabase.getDatabase(context)
+
+    CoroutineScope(Dispatchers.IO).launch {
+        db.userDao().insertUser(user)
     }
 }
