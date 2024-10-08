@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?attr/background"
-    tools:context=".LoginActivity"
+    tools:context=".activities.LoginActivity"
     android:orientation="vertical"
     android:gravity="center"
     >
@@ -23,7 +23,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:contentDescription="Botón para modo"
+            android:contentDescription="Botón para modo noche/dia"
             android:scaleType="centerInside"
             android:src="@drawable/ic_mode"
             android:layout_marginTop="3dp"
